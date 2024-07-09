@@ -1,0 +1,24 @@
+.changebtn {
+  padding: 1rem;
+  margin: 1em;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: 73rem;
+  background-color: rgb(139, 148, 148);
+  }
+
+.changebtn:hover{
+  background-color: rgb(13, 104, 104);
+  transition: background-color 0.5s, color 0.3s; /*time it takes to change bgcolor*/
+
+} 
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

@@ -1,0 +1,42 @@
+/* Home.css */
+
+p {
+    margin-left: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+  .getStartedBtn {
+    background-color: rgb(13, 104, 104);
+     margin-left: 40rem;
+     margin-top: -15rem;
+    border-radius: .5rem;
+    padding: 1rem; /* Adding padding for better button appearance */
+    border: none; /* Removing default button border */
+    cursor: pointer; /* Adding cursor pointer on hover */
+    transition: background-color 0.5s, color 0.3s; /*time it takes to change bgcolor*/
+ 
+  }
+
+  .getStartedBtn:hover{
+    background-color: rgb(146, 32, 175);
+    transition: background-color 0.5s, color 0.3s; /*time it takes to change bgcolor*/
+ color: whitesmoke;  
+  }
+
+  .movebutton{
+    margin-top: -3rem;  
+  }
+
+  b{
+    color: rgb(13, 104, 104);
+    transition: background-color 0.7s, color 0.3s; /*time it takes to change bgcolor*/ 
+  }
+
+  b:hover{
+    color: rgb(146, 32, 175);
+    transition: background-color 0.7s, color 0.3s; /*time it takes to change bgcolor*/
+    cursor: pointer; 
+  }
+
+  
+  

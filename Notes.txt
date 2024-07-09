@@ -1,0 +1,70 @@
+This is reference :  
+
+- Media Queries
+if if use web-based, i would use max-width making it 
+portable for smaller sized screens/view ports. 
+
+/*this is the line that surrounds the texts holding them
+Rather have them as a <section> each and have
+and classNmae followed by container.
+*/
+
+.container {
+
+    max-width:1536px;
+    margin-left:auto;
+    margin-right:auto;
+    padding left: 0.5rem;
+    padding right: 0.5rem;
+    background color: black;
+
+}
+
+
+/* 2xl */
+@media (max-width:1536px ){
+    .container {
+        max-width:1280px; 
+    }
+
+}
+
+
+/* xl */
+@media (max-width:1280px ){
+    .container {
+        max-width:1024px;
+
+    }
+}
+
+/* large */
+@media (max-width:1024px ){
+    .container {
+        max-width:768px
+
+    }
+}
+
+/* medium */
+@media (max-width:768 ){
+    .container {
+        max-width:648px ;
+
+    }
+}
+
+/* small */
+@media (max-width:648px ){
+    .container {
+        max-width:475px;
+
+    }
+}
+
+/* xs */
+@media (max-width:475px ){
+    .container {
+         width: 100px;
+    }
+}

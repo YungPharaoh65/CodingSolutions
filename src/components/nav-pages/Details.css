@@ -1,0 +1,111 @@
+ /* Base styles */
+ html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.AddProjects {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-left: 1rem;
+}
+
+/* Layout styles */
+.scroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-top: -2rem; /* Adjusted margin for better alignment */
+  margin-left: 2.5rem; /* Adjusted margin for better alignment */
+  height: 17rem; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Hide scrollbar for WebKit (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: Hide scrollbar track */
+}
+
+/* Module styles */
+.box10, .box11, .box12 {
+  position: relative;
+  width: 24rem;
+  height: 12rem;
+  background-color: rgba(82, 245, 245, 0.308);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+.box11 {
+  margin-left: 2rem; /* Adjust margin as needed */
+}
+
+.box12 {
+  background-color: rgba(61, 90, 97, 0.63);
+  cursor: pointer;
+  transition: opacity 0.7s ease;
+ 
+}
+
+.box12:hover{
+  background-color: rgba(139, 36, 207, 0.63);
+  cursor: pointer;
+  transition: opacity 0.7s ease;
+ 
+}
+
+.evergreen {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: .5rem;
+}
+
+.fontawesomesbrand {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 24px;
+  color: white;
+}
+
+.fontawesomesbrand2 {
+  position: absolute;
+  top: 4.5rem; /* Adjusted top position for better alignment */
+  right: 5rem; /* Adjusted right position for better alignment */
+  font-size: 4rem;
+  color: white;
+}
+
+/* State styles */
+.box10:hover .overlay,
+.box11:hover .overlay,
+.box12:hover .overlay {
+  opacity: 1;
+}
+

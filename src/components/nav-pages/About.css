@@ -1,0 +1,68 @@
+.webdev1, .webdev2{
+    position: relative;
+    width: 19rem;
+    height: 16rem;
+     background-color: rgba(82, 245, 245, 0.308);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden; /* Ensure content does not overflow */
+  }
+
+  p2, p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .webdev1{  
+    margin-left: 2rem; 
+    background-color: rgb(44, 139, 21); 
+    }
+
+    .webdev2{ 
+        margin-left: 23rem;
+        margin-top: -18rem;
+        background-color: rgb(123, 23, 136);  
+        }
+
+ p{
+ margin-left: 2rem; 
+  } 
+
+
+   p2{
+    margin-left: 2rem; 
+    font-weight: 100;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+   }   
+   
+   .workbuttons{
+    margin-left: 41rem;
+    margin-top: -18rem; 
+   }
+
+   .textbutton, .textbutton2{
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.3s; /*time it takes to change bgcolor*/ 
+   }
+
+   .textbutton2:hover{
+    background-color: rgb(59, 58, 58);
+     }
+
+   .textbutton:hover{
+      background-color: rgb(59, 58, 58);
+       }
+
+
+
+   .textbutton2{
+    margin-left: 9rem;
+    margin-top: -4.3rem;
+    margin-bottom: -.5rem;
+   }
+
+    

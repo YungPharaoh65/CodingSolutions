@@ -1,0 +1,25 @@
+/* index.css */
+
+body {
+  
+  transition: background-color 0.3s, color 0.3s; /*time it takes to change bgcolor*/
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: rgb(204, 200, 200);
+  color: black;
+}
+
+/* Dark mode styles */
+body, .fontawesome .dark-mode {
+  background-color: black;
+  color: white;
+}
+
+

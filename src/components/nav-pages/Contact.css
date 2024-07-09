@@ -1,0 +1,49 @@
+.contact-form {
+   margin-left: 5rem;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ textarea {
+   padding: 0.7rem;
+   margin-left: 1.2rem;
+   border-radius: 1rem;
+   border: 1px rgb(75, 73, 73) solid;
+   width: 15rem;
+    outline-color: gray;
+ }
+
+ textarea::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: Hide scrollbar track */
+}
+ 
+ .form-group1 {
+   margin-top: 0.4rem;
+ }
+ 
+ .form-group2 {
+   margin-left: -1.5rem;
+   margin-top: 3rem;
+   width: 25rem;
+   background-color: rgb(139, 148, 148);
+ }
+ 
+ .form-control {
+   background-color: rgb(139, 148, 148);
+ }
+ 
+ .changetext {
+   margin-left: 35rem;
+ }
+ 
+ .bigbox {
+   margin-top: -8.5rem;
+   margin-left: 2rem;
+ }
+ 
+ .btn-primary {
+   margin-left: 33.3rem;
+   padding-top: -3rem;
+ }
+ 
