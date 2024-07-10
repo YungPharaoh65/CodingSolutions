@@ -71,7 +71,7 @@ function Details() {
             {/* Show delete button only for added projects */}
             {index >= initialProjects.length && (
               <button className="delete-button" onClick={() => deleteProject(index)}>
-                 
+                <FontAwesomeIcon className="fontawesomesbrand" icon={faTrash} />
               </button>
             )}
           </div>
