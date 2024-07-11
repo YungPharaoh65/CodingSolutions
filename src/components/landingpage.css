@@ -200,8 +200,7 @@ Media Queries for Responsive Design Media Queries for Responsive Design
   .container-main, .container-secondary, .container-section {
     max-width: 1280px; 
   }
-
-  
+ 
 }
 
 /* xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl 
@@ -213,6 +212,9 @@ xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl */
   h1{
     font-size: 2.7rem;
   }
+  p, .p2{
+    font-size: 1rem;
+  }
 }
 
 /* large large large large large large large large large large large large 
@@ -223,6 +225,9 @@ large large large large large large large large large large large large large */
   }
   h1{
     font-size: 2.5rem;
+  }
+  p, .p2{
+    font-size: 1rem;
   }
 }
 
