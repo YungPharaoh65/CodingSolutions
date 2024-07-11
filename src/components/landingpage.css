@@ -46,7 +46,7 @@ h1:hover {
   height: 10rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  margin-top: -3rem;
+  margin-top: -10rem;
   margin-left: 4rem;
 }
 
@@ -56,8 +56,8 @@ h1:hover {
   height: 18rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  margin-top: 12rem;
-  margin-left: 4rem;
+  margin-top: 11rem;
+  margin-left: 1.3rem;
   gap: .7rem; /* Adjust the gap between the boxes as needed */
 }
 
@@ -151,3 +151,112 @@ h1:hover {
 
 /* Theme styles (themes for components, optional) */
 /* Add theme-related styles here if needed */
+
+.container-main { 
+   border: 1px solid white; /* Thin white line around the container */
+   width: 20rem;
+   height: 10rem;
+   border-top-left-radius: 2rem;
+   border-top-right-radius: 2rem;
+   margin-top: -3rem;
+   margin-left: 2.7rem;
+}
+
+.container-secondary {  
+  border: 1px solid white; /* Thin white line around the container */
+  width: 20rem;
+  height: 18rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-top:  1rem;
+  margin-left: 2.7rem;
+  gap: .7rem; /* Adjust the gap between the boxes as needed */
+}
+
+.container-section {  
+  border: 1px solid white; /* Thin white line around the container */
+  width: 60rem;
+  height: 25rem;
+  border-radius: 2rem;
+  margin-top: -25rem;
+  margin-left: 23rem;
+}
+
+.link-no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media Queries for Responsive Design 
+Media Queries for Responsive Design Media Queries for Responsive Design 
+Media Queries for Responsive Design Media Queries for Responsive Design 
+Media Queries for Responsive Design Media Queries for Responsive Design 
+  
+*/
+
+/* 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 
+2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl 2xl */
+@media (max-width: 1536px) {
+  .container-main, .container-secondary, .container-section {
+    max-width: 1280px; 
+  }
+
+  
+}
+
+/* xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl 
+xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl */
+@media (max-width: 1280px) {
+  .container-main, .container-secondary, .container-section {
+    max-width: 1270px;
+  }
+  h1{
+    font-size: 2.7rem;
+  }
+}
+
+/* large large large large large large large large large large large large 
+large large large large large large large large large large large large large */
+@media (max-width: 1024px) {
+  .container-main, .container-secondary, .container-section {
+    max-width: 768px;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+}
+
+/* medium medium medium medium medium medium medium medium medium 
+medium medium medium medium medium medium medium medium medium medium */
+@media (max-width: 768px) {
+  .container-main, .container-secondary, .container-section {
+    max-width: 648px;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+}
+
+
+/* small small small small small small small small small small 
+small small small small small small small small small small small */
+@media (max-width: 648px) {
+  .container-main, .container-secondary, .container-section {
+    max-width: 475px;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container-main, .container-secondary, .container-section {
+    width: 100%;
+    max-width: none;
+    margin-left: 1rem; /* Example adjustment for smaller screens */
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+}

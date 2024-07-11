@@ -64,6 +64,8 @@ function LandingPage() {
         <Navbar />
 
         {/* Small grey box */}
+
+        <div className="container-main"> </div>
         <div className="details">
           <br />
           <p2>date: {formatDate(currentDate)}</p2>
@@ -82,8 +84,10 @@ function LandingPage() {
             </div>
           </p>
         </div>
+        
 
         {/* Blueish Box */}
+        <div className="container-secondary">
         <div className="l-details2">
           <div className="moveboxes">
             <div className="m-smallbox m-smallbox--44">
@@ -112,8 +116,11 @@ function LandingPage() {
             <button className="pdfbutton">Download PDF</button>
           </a>
         </div>
+        </div>
 
         {/* Information Box - Section */}
+        
+        <div className="container-section"></div>
         <div className="l-informationbox">
           <Routes>
             <Route path="/" element={<Home />} />

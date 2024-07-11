@@ -17,7 +17,7 @@ body.light-mode {
 }
 
 /* Dark mode styles */
-body, .fontawesome .dark-mode {
+body, .fontawesome .dark-mode .container-main {
   background-color: black;
   color: white;
 }
