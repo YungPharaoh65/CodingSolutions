@@ -90,19 +90,19 @@ function LandingPage() {
         <div className="container-secondary">
         <div className="l-details2">
           <div className="moveboxes">
-            <a href="" className="m-smallbox m-smallbox--44">
+            <a href="https://www.instagram.com/princemphomsimango/" className="m-smallbox m-smallbox--44">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
 
-            <a href="" className="m-smallbox m-smallbox--45">
+            <a href="https://x.com/prince28_mpho" className="m-smallbox m-smallbox--45">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
 
-            <a href="" className="m-smallbox m-smallbox--46">
+            <a href="https://www.linkedin.com/in/prince-mpho-msimango-26b3b6282/" className="m-smallbox m-smallbox--46">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
 
-            <a href="" className="m-smallbox m-smallbox--47">
+            <a href="https://wa.me/message/UE6XNJVTRE7IM1 " className="m-smallbox m-smallbox--47">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
           </div>
