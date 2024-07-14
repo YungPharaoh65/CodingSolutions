@@ -60,9 +60,10 @@
 /* xl */
 @media (max-width:1280px ){
   .container {
-      max-width:1024px;
-
+      max-width:1024px; 
   }
+
+  
 }
 
 /* large */
@@ -99,6 +100,17 @@ width: 10rem;
     margin-top: 1rem;
      }
 
+     .changetext{
+      margin-left: 5rem;
+      margin-top: 15rem;
+      color: transparent;
+     }
+
+     button,.btn-primary{
+      margin-left: -1rem;
+      margin-top: 2rem;
+     }
+
 
 
 
@@ -113,7 +125,7 @@ width: 10rem;
 
   .form-group0 {
     margin-left:2rem ;
-    margin-top: -22rem;
+    margin-top: -24rem;
     width: 10rem;
      }
     
@@ -127,6 +139,10 @@ width: 10rem;
         width: 0rem;
         margin-top: 1rem;
          }
+
+        .changetext {
+          margin-left: -5rem;
+        }
 }
 
 /* small */
