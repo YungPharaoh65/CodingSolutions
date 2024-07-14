@@ -109,6 +109,7 @@ h1:hover {
 
 .p2 {
   text-decoration: none;  
+  font-size: 2rem;
 }
 
 /* Module styles (reusable components) */
@@ -175,7 +176,7 @@ h1:hover {
 
 .container-section {  
   border: 1px solid white; /* Thin white line around the container */
-  width: 60rem;
+  width: 59rem;
   height: 25rem;
   border-radius: 2rem;
   margin-top: -25rem;
@@ -207,7 +208,7 @@ Media Queries for Responsive Design Media Queries for Responsive Design
 xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl */
 @media (max-width: 1280px) {
   .container-main, .container-secondary, .container-section {
-    max-width: 1270px;
+    max-width: 1024px;
   }
   h1{
     font-size: 2.7rem;
@@ -215,6 +216,63 @@ xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl */
   p, .p2{
     font-size: 1rem;
   }
+
+
+  /*Greyish box*/
+.details {
+  background-color: rgb(139, 148, 148);
+  width: 18rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -10rem;
+  margin-left: 4rem;
+}
+
+
+  /*Blueish box*/
+
+  .l-details2 {
+    background-color: rgb(13, 104, 104);
+    width: 18rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 11rem;
+    margin-left: 1.3rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+  }
+
+
+  /*Information box*/
+  .l-informationbox {
+    background-color: rgb(139, 148, 148);
+    width: 50rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top: -25rem;
+    margin-left: 24rem;
+  }
+
+  .container-section {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 52rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top: -25rem;
+    margin-left: 23rem;
+  }
+
+  button{
+   width: 9rem;
+   margin-left: -5rem;
+  }
+
+   
+
+
+
+
 }
 
 /* large large large large large large large large large large large large 
@@ -227,8 +285,88 @@ large large large large large large large large large large large large large */
     font-size: 2.5rem;
   }
   p, .p2{
-    font-size: 1rem;
+    font-size: .85rem;
   }
+
+  p2{
+    font-size: .8rem;
+  }
+
+  
+
+  /*Greyish box*/
+.details {
+  background-color: rgb(139, 148, 148);
+  width: 18rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -10rem;
+  margin-left: 2rem;
+}
+
+
+.container-main { 
+  border: 1px solid white; /* Thin white line around the container */
+  width: 20rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -3rem;
+  margin-left: 0.8rem;
+} 
+
+
+  /*Blueish box*/
+
+  .l-details2 {
+    background-color: rgb(13, 104, 104);
+    width: 18rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 11rem;
+    margin-left: 1.1rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+  }
+  .container-secondary {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 20rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top:  1rem;
+    margin-left: .9rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+   }
+
+
+  /*Information box*/
+  .l-informationbox {
+    background-color: rgb(139, 148, 148);
+    width: 37rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top: -25rem;
+    margin-left: 1.5rem;
+  }
+
+  .container-section {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 39rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top:  2rem;
+    margin-left: .5rem;
+  }
+
+  button{
+   width: 8.5rem;
+   margin-left: -5rem;
+  }
+
+   
+
 }
 
 /* medium medium medium medium medium medium medium medium medium 
@@ -239,6 +377,84 @@ medium medium medium medium medium medium medium medium medium medium */
   }
   h1{
     font-size: 2.2rem;
+  }
+  p, .p2{
+    font-size: .82rem;
+  }
+
+  
+
+  /*Greyish box*/
+.details {
+  background-color: rgb(139, 148, 148);
+  width: 18rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -10rem;
+  margin-left: 2rem;
+}
+
+
+.container-main { 
+  border: 1px solid white; /* Thin white line around the container */
+  width: 20rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -3rem;
+  margin-left: 0.8rem;
+} 
+
+
+  /*Blueish box*/
+
+  .l-details2 {
+    background-color: rgb(13, 104, 104);
+    width: 18rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 11rem;
+    margin-left: 1.1rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+  }
+  .container-secondary {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 20rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top:  1rem;
+    margin-left: .9rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+   }
+
+
+  /*Information box*/
+  .l-informationbox {
+    background-color: rgb(139, 148, 148);
+    width: 37rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top: -25rem;
+    margin-left: 1.5rem;
+
+    margin-bottom: 3rem; /*space at the bottom*/
+  }
+
+  .container-section {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 39rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top:  2rem;
+    margin-left: .5rem;
+  }
+
+  button{
+   width: 8.5rem;
+   margin-left: -5rem;
   }
 }
 
@@ -252,6 +468,86 @@ small small small small small small small small small small small */
   h1{
     font-size: 2.2rem;
   }
+
+  p, .p2{
+    font-size: .7rem;
+  }
+
+  
+
+  /*Greyish box*/
+.details {
+  background-color: rgb(139, 148, 148);
+  width: 18rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -10rem;
+  margin-left: 2rem;
+}
+
+
+.container-main { 
+  border: 1px solid white; /* Thin white line around the container */
+  width: 20rem;
+  height: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: -3rem;
+  margin-left: 0.8rem;
+} 
+
+
+  /*Blueish box*/
+
+  .l-details2 {
+    background-color: rgb(13, 104, 104);
+    width: 18rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top: 11rem;
+    margin-left: 1.1rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+  }
+  .container-secondary {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 20rem;
+    height: 18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-top:  1rem;
+    margin-left: .9rem;
+    gap: .7rem; /* Adjust the gap between the boxes as needed */
+   }
+
+
+  /*Information box*/
+  .l-informationbox {
+    background-color: rgb(139, 148, 148);
+    width: 28rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top: -25rem; 
+    margin-left: 1.5rem;
+
+    margin-bottom: 3rem; /*space at the bottom*/
+
+  }
+
+  .container-section {  
+    border: 1px solid white; /* Thin white line around the container */
+    width: 77rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-top:  2rem;
+    margin-left: .5rem;
+  }
+
+  button{
+   width: 8.5rem;
+   margin-left: -5rem;
+  }
 }
 
 /* xs */
@@ -264,4 +560,9 @@ small small small small small small small small small small small */
   h1{
     font-size: 2.2rem;
   }
+  p, .p2{
+    font-size: .7rem;
+  }
+
+  
 }

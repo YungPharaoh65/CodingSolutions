@@ -16,6 +16,8 @@ const Navbar = () => {
 
   return (
     <nav className="l-navbar">
+
+    <div className="nav-container">
       <Link
         to="/Home"
         className={`link-no-underline ${activeLink === "/Home" ? "active" : ""}`}
@@ -25,7 +27,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faHouse} className="fontawesome" />
         </div>
       </Link>
+      </div>
 
+<div className="nav-container">
       <Link
         to="/About"
         className={`link-no-underline ${activeLink === "/About" ? "active" : ""}`}
@@ -35,7 +39,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faAddressBook} className="fontawesome" />
         </div>
       </Link>
+      </div>
 
+<div className="nav-container">
       <Link
         to="/Details"
         className={`link-no-underline ${activeLink === "/Details" ? "active" : ""}`}
@@ -45,7 +51,9 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBriefcase} className="fontawesome" />
         </div>
       </Link>
+      </div>
 
+<div className="nav-container">
       <Link
         to="/Contact"
         className={`link-no-underline ${activeLink === "/Contact" ? "active" : ""}`}
@@ -55,6 +63,8 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faPhone} className="fontawesome" />
         </div>
       </Link> 
+      </div>
+
     </nav>
 
     
