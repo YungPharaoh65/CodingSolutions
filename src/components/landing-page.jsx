@@ -47,7 +47,7 @@ function LandingPage() {
   const getDayOfCode = () => {
     const startDate = new Date(2024, 6, 1); // 1st July 2024
     const differenceInTime = currentDate.getTime() - startDate.getTime();
-    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + 1;
+    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + -13; //if i change the number it will start the countdown
     return differenceInDays;
   };
 
@@ -114,7 +114,7 @@ function LandingPage() {
           <p className="number">princemsimango27@gmail.com</p>
           
           {/* PDF Download Button */}
-          <a href="/Exam Pointers.pdf" download="Exam Pointers.pdf">
+          <a href="/CodingSolutions.pdf" download="CodingSolutions.pdf">
             <button className="pdfbutton">Download PDF</button>
           </a>
         </div>
