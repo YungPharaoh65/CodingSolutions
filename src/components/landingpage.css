@@ -5,6 +5,10 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
+a {
+  background-color: inherit;
+}
+
 h1 {
   margin-top: -7.8rem;
   margin-left: 5rem;
@@ -120,7 +124,8 @@ h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: pointer; 
+ background-color: inherit; 
   background-color: rgb(139, 148, 148); 
   transition: background-color 0.5s, color 0.3s; /*time it takes to change bgcolor*/
 }
@@ -128,6 +133,14 @@ h1:hover {
 .m-smallbox:hover { 
   background-color: rgb(107, 112, 112); 
 }
+
+.FontAwesomeIcon {
+  background-color: inherit;
+  color: inherit; /* Inherit text color from parent */
+  font: inherit; /* Inherit font properties from parent */
+  border: inherit; /* Inherit border properties from parent */
+}
+
 
 .m-smallclock {
   width: 2.5rem;

@@ -46,4 +46,101 @@
    margin-left: 33.3rem;
    padding-top: -3rem;
  }
+
+ 
+/* 2xl */
+@media (max-width:1536px ){
+  .container {
+      max-width:1280px; 
+  }
+
+}
+
+
+/* xl */
+@media (max-width:1280px ){
+  .container {
+      max-width:1024px;
+
+  }
+}
+
+/* large */
+@media (max-width:1024px ){
+  .container {
+      max-width:768px 
+  }
+
+  input[type="text"],
+ input[type="email"],
+ textarea {
+   padding: 0.7rem;
+   margin-left: 1.2rem; 
+   border-radius: 1rem;
+   border: 1px rgb(75, 73, 73) solid;
+   width: 15rem;
+    outline-color: gray;
+ }
+
+ .form-group0 {
+margin-left:-2rem ;
+margin-top: -17rem;
+width: 10rem;
+ }
+
+ .form-group1 {
+  margin-left:-2rem ;
+  width: 10rem;
+   }
+
+   .form-group2 {
+    margin-left:-2rem ; 
+    width: 0rem;
+    margin-top: 1rem;
+     }
+
+
+
+
+}
+
+/* medium */
+@media (max-width:768 ){
+  .container {
+      max-width:648px ;
+
+  }
+
+  .form-group0 {
+    margin-left:2rem ;
+    margin-top: -22rem;
+    width: 10rem;
+     }
+    
+     .form-group1 {
+      margin-left:2rem ;
+      width: 10rem;
+       }
+    
+       .form-group2 {
+        margin-left:2rem ; 
+        width: 0rem;
+        margin-top: 1rem;
+         }
+}
+
+/* small */
+@media (max-width:648px ){
+  .container {
+      max-width:475px;
+
+  }
+}
+
+/* xs */
+@media (max-width:475px ){
+  .container {
+       width: 100px;
+  }
+}
  

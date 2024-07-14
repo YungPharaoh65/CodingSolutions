@@ -90,19 +90,21 @@ function LandingPage() {
         <div className="container-secondary">
         <div className="l-details2">
           <div className="moveboxes">
-            <div className="m-smallbox m-smallbox--44">
+            <a href="" className="m-smallbox m-smallbox--44">
               <FontAwesomeIcon icon={faInstagram} />
-            </div>
+            </a>
 
-            <div className="m-smallbox m-smallbox--45">
+            <a href="" className="m-smallbox m-smallbox--45">
               <FontAwesomeIcon icon={faTwitter} />
-            </div>
-            <div className="m-smallbox m-smallbox--46">
+            </a>
+
+            <a href="" className="m-smallbox m-smallbox--46">
               <FontAwesomeIcon icon={faLinkedin} />
-            </div>
-            <div className="m-smallbox m-smallbox--47">
+            </a>
+
+            <a href="" className="m-smallbox m-smallbox--47">
               <FontAwesomeIcon icon={faWhatsapp} />
-            </div>
+            </a>
           </div>
 
           <p className="textdetails">phone</p>
