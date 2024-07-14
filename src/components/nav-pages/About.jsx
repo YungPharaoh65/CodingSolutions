@@ -24,7 +24,7 @@ function About() {
      lengths of functionality </p> 
      </div>
 
-     <div className="workbuttons"><p>work skills</p>
+     <div className="workbuttons"><p className="textbutton">work skills</p>
      <p className="textbutton">JavaScript</p> <p className="textbutton2">Github</p>
      <p className="textbutton">netlify</p> <p className="textbutton2">php</p>
      <p className="textbutton">Angular</p> <p className="textbutton2">React</p> 

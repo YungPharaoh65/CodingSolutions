@@ -154,7 +154,7 @@ h1:hover {
 /* Add theme-related styles here if needed */
 
 .container-main { 
-   border: 1px solid white; /* Thin white line around the container */
+   border: 1px solid transparent; /* Thin white line around the container */
    width: 20rem;
    height: 10rem;
    border-top-left-radius: 2rem;
@@ -164,7 +164,7 @@ h1:hover {
 }
 
 .container-secondary {  
-  border: 1px solid white; /* Thin white line around the container */
+  border: 1px solid transparent; /* Thin white line around the container */
   width: 20rem;
   height: 18rem;
   border-bottom-left-radius: 2rem;
@@ -175,7 +175,7 @@ h1:hover {
 }
 
 .container-section {  
-  border: 1px solid white; /* Thin white line around the container */
+  border: 1px solid transparent; /* Thin white line around the container */
   width: 59rem;
   height: 25rem;
   border-radius: 2rem;
@@ -255,12 +255,13 @@ xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl xl */
   }
 
   .container-section {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 52rem;
     height: 25rem;
     border-radius: 2rem;
     margin-top: -25rem;
     margin-left: 23rem;
+    
   }
 
   button{
@@ -307,7 +308,7 @@ large large large large large large large large large large large large large */
 
 
 .container-main { 
-  border: 1px solid white; /* Thin white line around the container */
+  border: 1px solid transparent; /* Thin white line around the container */
   width: 20rem;
   height: 10rem;
   border-top-left-radius: 2rem;
@@ -330,7 +331,7 @@ large large large large large large large large large large large large large */
     gap: .7rem; /* Adjust the gap between the boxes as needed */
   }
   .container-secondary {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 20rem;
     height: 18rem;
     border-bottom-left-radius: 2rem;
@@ -352,7 +353,7 @@ large large large large large large large large large large large large large */
   }
 
   .container-section {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 39rem;
     height: 25rem;
     border-radius: 2rem;
@@ -397,7 +398,7 @@ medium medium medium medium medium medium medium medium medium medium */
 
 
 .container-main { 
-  border: 1px solid white; /* Thin white line around the container */
+  border: 1px solid transparent; /* Thin white line around the container */
   width: 20rem;
   height: 10rem;
   border-top-left-radius: 2rem;
@@ -420,7 +421,7 @@ medium medium medium medium medium medium medium medium medium medium */
     gap: .7rem; /* Adjust the gap between the boxes as needed */
   }
   .container-secondary {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 20rem;
     height: 18rem;
     border-bottom-left-radius: 2rem;
@@ -444,7 +445,7 @@ medium medium medium medium medium medium medium medium medium medium */
   }
 
   .container-section {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 39rem;
     height: 25rem;
     border-radius: 2rem;
@@ -488,7 +489,7 @@ small small small small small small small small small small small */
 
 
 .container-main { 
-  border: 1px solid white; /* Thin white line around the container */
+  border: 1px solid transparent; /* Thin white line around the container */
   width: 20rem;
   height: 10rem;
   border-top-left-radius: 2rem;
@@ -511,7 +512,7 @@ small small small small small small small small small small small */
     gap: .7rem; /* Adjust the gap between the boxes as needed */
   }
   .container-secondary {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 20rem;
     height: 18rem;
     border-bottom-left-radius: 2rem;
@@ -526,7 +527,7 @@ small small small small small small small small small small small */
   .l-informationbox {
     background-color: rgb(139, 148, 148);
     width: 28rem;
-    height: 25rem;
+    height: 31em;
     border-radius: 2rem;
     margin-top: -25rem; 
     margin-left: 1.5rem;
@@ -536,7 +537,7 @@ small small small small small small small small small small small */
   }
 
   .container-section {  
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
     width: 77rem;
     height: 25rem;
     border-radius: 2rem;

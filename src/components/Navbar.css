@@ -81,7 +81,7 @@ html, body {
   display: flex; /* Enables Flexbox layout */
   justify-content: center; /* Horizontally centers the items */
   align-items: center; /* Vertically centers the items */
-  border: 1px solid white; /* Thin white line around the container */ 
+  border: 1px solid transparent; /* Thin white line around the container */ 
 }
 
 
@@ -139,7 +139,7 @@ html, body {
     flex-direction: column; /* Stacks the child elements vertically */
     justify-content: center; /* Vertically centers the items */
     align-items: center; /* Horizontally centers the items */
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
   } 
 
   .m-box--47 {
@@ -179,7 +179,7 @@ html, body {
     margin-bottom: -3rem;
       justify-content: center; /* Vertically centers the items */
     align-items: center; /* Horizontally centers the items */
-    border: 1px solid white; /* Thin white line around the container */
+    border: 1px solid transparent; /* Thin white line around the container */
   } 
 }
 
