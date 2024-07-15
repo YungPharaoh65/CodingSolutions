@@ -16,7 +16,8 @@ const Home = () => {
         </b>
         ,
         <br />
-        we empower learners at all levels. We go through practicals so you enjoy learning.
+        we empower learners at all levels. We go through practicals so you enjoy
+        learning.
         <br />
         <br />
         Our mission is to foster a supportive learning environment where
@@ -29,14 +30,14 @@ const Home = () => {
         join us to embark on a journey of learning and discovery in web
         development.
         <br />
-        <br />
-         - Download the pdf to read on our detailed course we are offering - 👉🏽
+        <br />- Download the pdf to read on our detailed course we are offering
+        - 👉🏽
       </p>
       <br />
 
       <div className="movebutton">
-      <a href="/CodingSolutions.pdf" download="CodingSolutions.pdf">
-        <button className="getStartedBtn">download pdf...</button>
+        <a href="/summary.pdf" download="Real Web dev Guide 2024">
+          <button className="getStartedBtn">download pdf...</button>
         </a>
       </div>
     </div>

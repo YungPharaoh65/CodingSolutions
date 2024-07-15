@@ -47,9 +47,11 @@ function LandingPage() {
   const getDayOfCode = () => {
     const startDate = new Date(2024, 6, 1); // 1st July 2024
     const differenceInTime = currentDate.getTime() - startDate.getTime();
-    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + -13; //if i change the number it will start the countdown
+    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24)) + -15; //if i change the number it will start the countdown
     return differenceInDays;
   };
+
+  
 
   return (
     <Router>
