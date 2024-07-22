@@ -105,3 +105,22 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Popup.css */
+button.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -5rem;
+  margin-left: 45rem;
+}
+
+button.submit-button:disabled {
+  background-color: #a0a0a0; /* Optional: Change color when disabled */
+  cursor: not-allowed;
+}
+
+

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { faUmbrella } from "@fortawesome/free-solid-svg-icons";
+import { ClipLoader } from "react-spinners"; // Import ClipLoader
 import "./Popup.css";
 import { storage } from "../nav-pages/firebase/portfoliodata"; // Import Firebase storage
 
@@ -11,6 +12,8 @@ const Popup = ({ show, onClose, addProject }) => {
     image: null,
     projectLink: "", // Add projectLink to formData
   });
+
+  const [loading, setLoading] = useState(false); // State for loading spinner
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -29,37 +32,45 @@ const Popup = ({ show, onClose, addProject }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true when submission starts
 
     if (!formData.image) {
       console.error("No image selected.");
+      setLoading(false); // Reset loading state
       return;
     }
 
-    // Upload image to Firebase Storage
-    const imageRef = ref(storage, `images/${formData.image.name}`);
-    await uploadBytes(imageRef, formData.image);
-    const imageUrl = await getDownloadURL(imageRef);
-
-    const newProject = {
-      imgSrc: imageUrl,
-      link: formData.projectLink, // Use the projectLink from formData
-      alt: formData.projectName,
-      icon: faUmbrella, // Change to appropriate icon
-      name: formData.projectName,
-    };
-
     try {
+      // Upload image to Firebase Storage
+      const imageRef = ref(storage, `images/${formData.image.name}`);
+      await uploadBytes(imageRef, formData.image);
+      const imageUrl = await getDownloadURL(imageRef);
+
+      const newProject = {
+        imgSrc: imageUrl,
+        link: formData.projectLink, // Use the projectLink from formData
+        alt: formData.projectName,
+        icon: faUmbrella, // Change to appropriate icon
+        name: formData.projectName,
+      };
+
       await addProject(newProject); // Save to Firestore and update state
       console.log("Project added successfully!");
-      onClose();
-      setFormData({
-        name: "",
-        projectName: "",
-        image: null,
-        projectLink: "", // Reset projectLink
-      });
+
+      // Simulate a 30-second loading period
+      setTimeout(() => {
+        setLoading(false); // Reset loading state after 30 seconds
+        onClose(); // Close the popup
+        setFormData({
+          name: "",
+          projectName: "",
+          image: null,
+          projectLink: "", // Reset projectLink
+        });
+      }, 1000); // 10 seconds delay
     } catch (error) {
       console.error("Error adding project: ", error);
+      setLoading(false); // Reset loading state on error
     }
   };
 
@@ -70,7 +81,10 @@ const Popup = ({ show, onClose, addProject }) => {
   };
 
   return (
-    <div className={`popup-overlay ${show ? "show" : ""}`} onClick={handleClose}>
+    <div
+      className={`popup-overlay ${show ? "show" : ""}`}
+      onClick={handleClose}
+    >
       <div className={`popup ${show ? "show" : ""}`}>
         <button className="popup-close" onClick={onClose}>
           &times;
@@ -129,7 +143,9 @@ const Popup = ({ show, onClose, addProject }) => {
             />
           </div>
           <div className="button-container">
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={loading}>
+              {loading ? <ClipLoader size={20} color={"#fff"} /> : "Submit"}
+            </button>
           </div>
         </form>
       </div>
