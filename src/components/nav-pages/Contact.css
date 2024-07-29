@@ -17,6 +17,13 @@
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: Hide scrollbar track */
 }
+
+/* Custom placeholder styling for .form-control */
+.form-control::placeholder {
+  color: #635858; /* Replace with your desired color */
+  opacity: 1;  /* Ensure full opacity for better visibility */
+}
+
  
  .form-group1 {
    margin-top: 0.4rem;
@@ -46,6 +53,65 @@
    margin-left: 33.3rem;
    padding-top: -3rem;
  }
+
+
+ /* Custom message bar */
+.custom-alert {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  max-width: 80%;
+  width: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.custom-alert.success {
+  background-color: #fafafa;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.custom-alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.custom-alert.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.custom-alert.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.custom-alert button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #2d57a5;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-alert button:hover {
+  background-color: #501a1d;
+}
 
  
 /* 2xl */
