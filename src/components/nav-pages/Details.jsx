@@ -68,6 +68,7 @@ function Details() {
             <a href={project.link} className="overlay">
               {project.name} <FontAwesomeIcon className="fontawesomesbrand" icon={project.icon} />
             </a>
+            
             {/* Show delete button only for added projects */}
             {index >= initialProjects.length && (
               <button className="delete-button" onClick={() => deleteProject(index)}>
