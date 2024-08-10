@@ -1,26 +1,27 @@
 import React, { useState } from "react";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { collection, addDoc } from "firebase/firestore";
+import { db, storage } from "../nav-pages/firebase/firebase.js"; // Updated import path
 import { faUmbrella } from "@fortawesome/free-solid-svg-icons";
-import { ClipLoader } from "react-spinners"; // Import ClipLoader
+import { ClipLoader } from "react-spinners";
 import "./Popup.css";
-import { storage } from "../nav-pages/firebase/portfoliodata"; // Import Firebase storage
 
 const Popup = ({ show, onClose, addProject }) => {
   const [formData, setFormData] = useState({
     name: "",
     projectName: "",
     image: null,
-    projectLink: "", // Add projectLink to formData
+    projectLink: "",
   });
 
-  const [loading, setLoading] = useState(false); // State for loading spinner
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
     if (name === "image" && files && files.length > 0) {
       setFormData({
         ...formData,
-        image: files[0], // Store the file object instead of URL
+        image: files[0],
       });
     } else {
       setFormData({
@@ -32,45 +33,43 @@ const Popup = ({ show, onClose, addProject }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Set loading to true when submission starts
+    setLoading(true);
 
     if (!formData.image) {
       console.error("No image selected.");
-      setLoading(false); // Reset loading state
+      setLoading(false);
       return;
     }
 
     try {
-      // Upload image to Firebase Storage
       const imageRef = ref(storage, `images/${formData.image.name}`);
       await uploadBytes(imageRef, formData.image);
       const imageUrl = await getDownloadURL(imageRef);
 
       const newProject = {
         imgSrc: imageUrl,
-        link: formData.projectLink, // Use the projectLink from formData
+        link: formData.projectLink,
         alt: formData.projectName,
-        icon: faUmbrella, // Change to appropriate icon
+        icon: faUmbrella,
         name: formData.projectName,
       };
 
-      await addProject(newProject); // Save to Firestore and update state
-      console.log("Project added successfully!");
+      await addDoc(collection(db, "Projects"), newProject);
+      addProject(newProject); // Update parent component
 
-      // Simulate a 30-second loading period
       setTimeout(() => {
-        setLoading(false); // Reset loading state after 30 seconds
-        onClose(); // Close the popup
+        setLoading(false);
+        onClose();
         setFormData({
           name: "",
           projectName: "",
           image: null,
-          projectLink: "", // Reset projectLink
+          projectLink: "",
         });
-      }, 1000); // 10 seconds delay
+      }, 1000);
     } catch (error) {
       console.error("Error adding project: ", error);
-      setLoading(false); // Reset loading state on error
+      setLoading(false);
     }
   };
 
@@ -97,7 +96,6 @@ const Popup = ({ show, onClose, addProject }) => {
               type="text"
               id="name"
               name="name"
-              className="Name"
               placeholder="Enter developer name"
               value={formData.name}
               onChange={handleChange}
@@ -110,7 +108,6 @@ const Popup = ({ show, onClose, addProject }) => {
               type="text"
               id="projectName"
               name="projectName"
-              className="projectName"
               placeholder="Enter project name"
               value={formData.projectName}
               onChange={handleChange}
@@ -123,7 +120,6 @@ const Popup = ({ show, onClose, addProject }) => {
               type="url"
               id="projectLink"
               name="projectLink"
-              className="projectLink"
               placeholder="Enter project URL"
               value={formData.projectLink}
               onChange={handleChange}
@@ -136,7 +132,6 @@ const Popup = ({ show, onClose, addProject }) => {
               type="file"
               id="image"
               name="image"
-              className="imageSelect"
               accept="image/*"
               onChange={handleChange}
               required

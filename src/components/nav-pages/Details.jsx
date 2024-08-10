@@ -45,7 +45,6 @@ function Details() {
   };
 
   const addProject = (newProject) => {
-    newProject.id = projects.length + 1; // Assign a unique ID
     const updatedProjects = [...projects, newProject];
     setProjects(updatedProjects);
     localStorage.setItem("projects", JSON.stringify(updatedProjects));
@@ -69,7 +68,6 @@ function Details() {
               {project.name} <FontAwesomeIcon className="fontawesomesbrand" icon={project.icon} />
             </a>
             
-            {/* Show delete button only for added projects */}
             {index >= initialProjects.length && (
               <button className="delete-button" onClick={() => deleteProject(index)}>
                 <FontAwesomeIcon className="fontawesomesbrand" icon={faTrash} />

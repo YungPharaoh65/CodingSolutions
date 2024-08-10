@@ -1,4 +1,4 @@
-// src/firebase/firebase.js
+// src/firebase/contactpage.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
@@ -13,13 +13,11 @@ const firebaseConfig = {
   measurementId: "G-8QWQWX2H9P"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Firestore
 const db = getFirestore(app);
-
-// Initialize Firebase Storage
 const storage = getStorage(app);
 
 export { db, storage };
+
+//finished here now//finished here now//finished here now//finished here now//finished here now
+//finished here now//finished here now//finished here now//finished here now//finished here now

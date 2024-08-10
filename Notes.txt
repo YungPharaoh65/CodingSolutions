@@ -1,7 +1,7 @@
 This is reference :  
 
 - Media Queries
-if if use web-based, i would use max-width making it 
+if I use web-based first, i would use max-width making it 
 portable for smaller sized screens/view ports. 
 
 /*this is the line that surrounds the texts holding them

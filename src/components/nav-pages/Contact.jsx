@@ -1,6 +1,7 @@
+// src/components/Contact.jsx
 import React, { useState, useEffect } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../nav-pages/firebase/firebase"; // Adjust the path as needed
+import { db } from "../nav-pages/firebase/contactpage"; // Update this path if necessary
 import "./Contact.css";
 
 function Contact() {
@@ -23,7 +24,8 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const docRef = await addDoc(collection(db, "user"), {
+      // Ensure you're adding to the correct collection name
+      const docRef = await addDoc(collection(db, "ContactPage"), {
         name,
         email,
         message,
@@ -32,10 +34,18 @@ function Contact() {
       setName("");
       setEmail("");
       setMessage("");
-      setAlert({ show: true, message: "Appreciate the message - Coding Solutions", type: "success" });
+      setAlert({
+        show: true,
+        message: "Appreciate the message - Coding Solutions",
+        type: "success",
+      });
     } catch (e) {
       console.error("Error adding document: ", e);
-      setAlert({ show: true, message: "Error submitting message. Please try again.", type: "error" });
+      setAlert({
+        show: true,
+        message: "Error submitting message. Please try again.",
+        type: "error",
+      });
     }
   };
 
@@ -51,7 +61,6 @@ function Contact() {
       return () => clearTimeout(timer);
     }
   }, [alert]);
-
   return (
     <>
       <h1>Contact</h1>
