@@ -53,7 +53,7 @@ function LandingPage() {
     const startDate = new Date(2024, 6, 1); // 1st July 2024
     const differenceInTime = currentDate.getTime() - startDate.getTime();
     const differenceInDays =
-      Math.floor(differenceInTime / (1000 * 3600 * 24)) + -23; //if i change the number it will start the countdown
+      Math.floor(differenceInTime / (1000 * 3600 * 24)) + -28; //if i change the number it will start the countdown
     return differenceInDays;
   };
 
