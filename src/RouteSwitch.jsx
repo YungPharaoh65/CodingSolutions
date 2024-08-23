@@ -5,6 +5,7 @@ import Contact from "./components/nav-pages/Contact";
 import Details from "./components/nav-pages/Details";
 import About from "./components/nav-pages/About";
 import Home from "./components/nav-pages/Home";
+import Pricing from "./components/nav-pages/pricing"
  
 const RouteSwitch = () => {
   return (
@@ -15,8 +16,10 @@ const RouteSwitch = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Details" element={<Details />} />
         <Route path="/Contact" element={<Contact />} /> 
+        <Route path="/pricing" element={<Pricing />} />
          </Routes>
     </HashRouter>
+    
   );
 };
 

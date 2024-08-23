@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -30,15 +31,14 @@ const Home = () => {
         join us to embark on a journey of learning and discovery in web
         development.
         <br />
-        <br />- Download the pdf to read on our detailed course we are offering
-        - 👉🏽
+        <br />- find out how you can join now by clicking here to begin with us- 👉🏽
       </p>
       <br />
 
       <div className="movebutton">
-        <a href="/summary.pdf" download="Real Web dev Guide 2024">
-          <button className="getStartedBtn">download pdf...</button>
-        </a>
+     <a href="https://yungpharaoh65.github.io/pricing/">   
+          <button className="getStartedBtn">find out what we learn</button> 
+        </a> 
       </div>
     </div>
   );
