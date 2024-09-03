@@ -132,7 +132,7 @@ function LandingPage() {
             <p className="number">princemsimango27@gmail.com</p>
 
             {/* PDF Download Button */}
-            <a href="/Coding.pdf" download="Information">
+            <a href="/CODINGSOLUTIONS (PDF FORMAT).pdf" download="Information">
               <button className="pdfbutton">Download PDF</button>
             </a>
           </div>
