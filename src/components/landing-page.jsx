@@ -80,7 +80,8 @@ function LandingPage() {
 
           <Link to="/About" className="link-no-underline">
             <div className="changecolor">
-              <p2>{getDayOfCode()} of 30 days code</p2>
+              {/** <p2>{getDayOfCode()} of 30 days code</p2>*/}  
+              <p2>1on1 classes on </p2>
             </div>
           </Link>
 
